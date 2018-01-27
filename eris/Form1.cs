@@ -85,7 +85,7 @@ namespace eris
                 postData += ("&" + _par2 + "=" + strName);
                 byte[] data = encoding.GetBytes(postData);
 
-                // Prepare web request...
+                // web request...
                 HttpWebRequest myRequest =
                   (HttpWebRequest)WebRequest.Create(_host);
 
