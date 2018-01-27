@@ -58,8 +58,8 @@ namespace eris
             newStreamTest.Write(dataTest, 0, dataTest.Length);
 
             newStreamTest.Close();
-            HttpWebResponse myHttpWebResponseTest = (HttpWebResponse)myRequestTest.GetResponse();
             //Obtencion del Stream asociado al Response.
+            HttpWebResponse myHttpWebResponseTest = (HttpWebResponse)myRequestTest.GetResponse();
             //Obteniendo el Content-Length para saber si hay un SQLi o no (Al variar la longitud del HTML)
             string _content = string.Empty;
             StringBuilder requestBuilder1 = new StringBuilder();
