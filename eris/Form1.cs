@@ -41,8 +41,8 @@ namespace eris
             string strNameTest = "badLogin";
 
             ASCIIEncoding encodingTest = new ASCIIEncoding();
-            string postData = _par1 + "=" + strIdTest;
-            postData += ("&" + _par2 + "=" + strNameTest);
+            string postDataTest = _par1 + "=" + strIdTest;
+            postDataTest += ("&" + _par2 + "=" + strNameTest);
             byte[] dataTest = encodingTest.GetBytes(postDataTest);
 
             // web request...
